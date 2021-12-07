@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
-         //Phase 2 Exercice 1//
-         function trueFalse(a) {
+        //Phase 2 Exercice 1//
+        function trueFalse(a) {
             let result = '';
             if (a > 0) {
                 result = 'True';
@@ -25,19 +27,72 @@
 
         //Phase 2 Exercice 2//
 
-        function retourtexte(str='a') {
+        function retourtexte(str = 'a') {
             console.log(str);
         }
         retourtexte()
 
         // Phase 2 Exercice 3//
 
-        function nomPrenom(str1='Bada', str2='Boom'){
-            console.log(str1+str2);
+        function nomPrenom(str1 = 'Bada', str2 = 'Boom') {
+            console.log(str1 + str2);
         }
         nomPrenom()
 
-        //Phase 2 Exercice 4
+        //Phase 2 Exercice 4//
+
+        function plusgplusp(x, y) {
+            if (x > y) {
+                console.log('Le premier nombre est plus grand');
+            }
+            else if (x < y) {
+                console.log('Le premier nombre est plus petit');
+            }
+            else if (x == y) {
+                console.log('Les deux nombres sont identiques');
+            }
+        }
+        plusgplusp()
+
+        // Phase 2 Exercice 5//
+
+        function AgeNom(str6 = 'Bobby', t = 25) {
+            console.log(t + str6);
+        }
+        AgeNom()
+
+        // Phase 2 Exercice 6//
+
+        let nom = "Fallas";
+        let prénom = 'Yohann';
+        let Age = '25';
+        function salutations(nom, prénom, Age) {
+            console.log("Bonjour", prénom, nom, "tu as", Age, "Ans");
+
+        }
+        salutations(nom, prénom, Age)
+
+        //Phase 2 Exercice 7//
+
+        let age = '7';
+        let genre = 'Homme';
+        function ageGenre(age, genre) {
+            if (age >= 18 && genre === 'Homme') {
+                console.log('Vous êtes un homme majeur');
+            }
+            if (age <= 18 && genre === 'Homme') {
+                console.log('Vous êtes un homme mineur');
+            }
+            if (age <= 18 && genre === 'Femme') {
+                console.log('Vous êtes une femme mineure');
+            }
+            if (age >= 18 && genre === 'Femme') {
+                console.log('Vous êtes une femme majeure');
+            }
+
+        }
+        ageGenre(age, genre)
     </script>
 </body>
+
 </html>
